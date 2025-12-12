@@ -7,6 +7,7 @@ xmlns="http://www.w3.org/TR/REC-html40">
 
 <head>
 <meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name=ProgId content=Word.Document>
 <meta name=Generator content="Microsoft Word 15">
 <meta name=Originator content="Microsoft Word 15">
@@ -8047,6 +8048,41 @@ table.MsoTable15Grid1LightLastCol
  <o:shapelayout v:ext="edit">
   <o:idmap v:ext="edit" data="2"/>
  </o:shapelayout></xml><![endif]-->
+
+
+<style>
+/* Responsive overrides for Word-exported CV HTML */
+html, body { margin: 0; padding: 0; }
+
+body{
+  max-width: 1000px;
+  margin: 24px auto;
+  padding: 0 16px;
+  line-height: 1.55;
+  overflow-x: hidden;
+}
+
+/* Word “page” container: remove fixed page layout */
+div.WordSection1{
+  width: auto !important;
+  max-width: 100% !important;
+}
+
+/* Biggest culprit: fixed-width tables */
+table{
+  width: 100% !important;
+  max-width: 100% !important;
+  table-layout: auto !important;
+  border-collapse: collapse;
+}
+
+/* Let long strings (URLs/emails) wrap */
+a, p, li, td, th, div, span{
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+</style>
+
 </head>
 
 <body lang=EN-GB link="#0B5294" vlink="#54A738" style='tab-interval:.5in;
